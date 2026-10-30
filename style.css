@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  background: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.carta {
+  width: 100px;
+  height: 100px;
+  background: #4a4a6a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.carta.destapada {
+  background: #fff;
+  color: #000;
+  cursor: default;
+}
+
+.carta.encontrada {
+  background: #4caf50;
+  cursor: default;
+}
